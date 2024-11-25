@@ -7,10 +7,14 @@ library(haven)
 
 data <- read_delim("raw_data.csv")
 
-mean(fifth_graders$reading_score, na.rm = TRUE)
+table(dataset$ crime_avg)
+mean(dataset$ crime_avg, na.rm = TRUE)
+sd(dataset$crime_avg, na.rm = TRUE)
 
-sd(data$gdp_per_capita, na.rm = TRUE)
+table(data$land_locked)
+mean(dataset$land_locked)
+sd(dataset$land_lcoked)
 
-table(data$land_locked, data$lon_trm)
-
-table(data$lon_trm)
+table(dataset$pop_area)
+mean(dataset$pop_area)
+sd(dataset$pop_area)
