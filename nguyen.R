@@ -3,12 +3,17 @@ setwd("H:/sta215")
 
 library(readr)
 library(dplyr)
+library(tidytext)
+library(ggplot2)
 library(haven)
+library(forcats)
+library(psych)
+library(readxl)
 
-data <- read_delim("raw_data.csv")
+dataset <- read_delim("raw_data.csv")
 
-table(dataset$ crime_avg)
-mean(dataset$ crime_avg, na.rm = TRUE)
+table(dataset$crime_avg)
+mean(dataset$crime_avg, na.rm = TRUE)
 sd(dataset$crime_avg, na.rm = TRUE)
 
 table(data$land_locked)
