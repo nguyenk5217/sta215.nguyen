@@ -1,5 +1,16 @@
+## Project:  STA 215, Fall 2024, Final Project
+# Located:   Kline TCNJ Google Drive
+# Date:      2024_12_17
+# Who:       Zachary D. Kline
+
+## Load packages and working directory
+# run base.R if these commands return an error
+
 # set wd 
+
 setwd("H:/sta215")
+
+#load packages
 
 library(readr)
 library(dplyr)
@@ -10,6 +21,7 @@ library(forcats)
 library(psych)
 library(readxl)
 
+#load data in environmeny
 data_raw <- read_csv("raw_data.csv")
 dataset <- na.omit(data_raw)
 view(dataset)
