@@ -40,7 +40,6 @@ lm<- lm(crime_avg ~ nhwhite, data = dataset)
 summary(lm)
 abline(lm, col = "red")
 
-## 2. The residual plot
 linear_plot <- plot(dataset$crime_avg, dataset$nhwhite)
 print(linear_plot)
 meany <- mean(dataset$crime_avg)
@@ -51,6 +50,8 @@ linear_relationship <- lm(crime_avg ~ nhwhite, data = dataset)
 summary(linear_relationship)
 abline(linear_relationship, col = "red")
 
+## 2. The residual plot
+
 plot(dataset$crime_avg, residuals(linear_relationship))
 plot(dataset$nhwhite, residuals(linear_relationship))
 
@@ -58,21 +59,12 @@ abline(h = 0, col = "red")
 
 ## 3. The boxplot
 
-lm(crime_avg ~ city, data = dataset)
-aov(crime_avg ~ city, data = dataset)
-summary(crime_avg ~ city, data = dataset)
-boxplot(crime_avg ~ city, data = dataset)
+lm(crime_avg ~ cities, data = dataset)
+aov(crime_avg ~ cities, data = dataset)
+summary(crime_avg ~ cities, data = dataset)
+boxplot(crime_avg ~ cities, data = dataset)
 
-lm(crime_avg ~ number_of_listens, data = dataset)
-aov(personal_enjoyment ~ number_of_listens, data = dataset)
-summary(personal_enjoyment ~ number_of_listens, data = dataset)
-
-# filter out songs longer than 10 minutes (600 seconds)
-dataset_withououtlier <- dataset %>%
-  filter(song_length < 600)
-#filter out songs with more than 10 million listens
-dataset_withoutlistensoutlier <- dataset %>%
-  filter(number_of_listens < 10000000)
-
-
+lm(crime_avg ~ nhwhite, data = dataset)
+aov(crime_avg ~ nhwhits, data = dataset)
+summary(pcrime_avg ~ nhwhit, data = dataset)
 
