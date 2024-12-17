@@ -5,17 +5,11 @@ This replication package observes major cities within the United States and diff
 For the script, open the "nguyen.R" which has code and the dataset needed to be uploaded is raw_data.csv
 
 ## **Data**
-The data collected for this project was songs from the studio albums of the band King Gizzard and the Lizard Wizard. Being a band that explores a wide range of genres, the main goal of the analysis was to determine which types of songs listeners enjoy the most and comparing that to which ones I enjoyed the most. I analyzed their discography by taking account each song's length in seconds, by finding the number of listens, categorizing each song into a few possible descriptions, categorizing the lyrical content into certain topics, giving each song a rating based on how much I enjoyed it, and inputting which album each song was on.
+The data that was collected for this was data of Non-Hispanic White populations of every major/more populated cities in the United States as well as the crime average within each city of about every 1000 people. All cities in this data were typically above 300k+ population and were very significant numbers for each data. 
 
 ## **Operationalization**
-To operationalize number of listens, I went to Spotify and took down the number of streams each song had received in its history. 
+I went through the US Census and another website to observe each nhwhite population and a neighborhood website to calculated each crime average. 
 
-I did the same for finding song length, going to Spotify and converting the length of each song into seconds
+The concept of nhwhite was operationalized by the percentages that were shown on the Census. Every Non-Hispanic White population was a very large diversity group that could be marginalized and made into significant numbers. 
 
-The concept of song description was operationalized by reviewing the discography and coming up with a few adjectives that could describe a good amount of songs. Psychedelic songs are ones that fit mostly into the psychedelic rock genre along with some other songs that were "trippy" in nature. Aggressive songs are either their punk-y or metal songs that were fast-paced and loud. Upbeat songs are, as the name suggests, more upbeat and happier, more pleasant-sounding. Groovy songs are the ones that have a defined, hard to ignore groove that makes the listener want to move. Chill songs are often down-tempo, mellow songs with softer instrumentation. Heavy songs are down-tempo but with louder, harder, and more distorted instrumentation. Lastly is Other, for those songs that did not easily fit into the other descriptors. 
-
-The concept of song topic was operationalized in a similar way. After reviewing each song's lyrics, I came up with a few categories that most songs fit into. Love/Relationship includes songs that are primarily about relationships and on less frequent occasions, the concept of love itself. Narrative songs have a cohesive story in the lyrical content. Person/Character songs are about individual people or characters, while a narrative song may have characters, person/character songs focus on an individual, not the story. Societal Issue songs are about struggles that greater society faces. The Other category once again acting as a catch-all for songs that don't easily fit into the other topics. 
-
-I measured my personal enjoyment on a scale of 1-10 with 1 meaning I disliked the song and 10 meaning I loved the song. 
-
-My final variable was the album each song was on. This was used as a grouping variable to measure differences between not just songs but whole albums.
+The concept of crime average was based on population. Cities with larger populations and a higher rate of populaity/visits would most likely have a higher crime average. Overall, the idea of crime average can play with many factors such as state, diversity group, region, and average salary. Higher crime averages are more likely found in cities with larger populations, cities with lower gdp, and other factors.
